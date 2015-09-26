@@ -92,43 +92,43 @@ public class OlxHomeActivity extends AppCompatActivity {
                     case 0:
                         String[] mobiles = getResources().getStringArray(R.array.categories_mobile);
                         List<String> mobileList = Arrays.asList(mobiles);
-                        ArrayAdapter<String> mobileAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, mobileList);
-                        mobileAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        ArrayAdapter<String> mobileAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.component,  R.id.tv_promo_txt, mobileList);
+                        mobileAdapter.setDropDownViewResource(R.layout.component);
                         mProductSpinner.setAdapter(mobileAdapter);
                         break;
                     case 1:
                         String[] cars = getResources().getStringArray(R.array.categories_cars);
                         List<String> carsList = Arrays.asList(cars);
-                        ArrayAdapter<String> carsAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, carsList);
-                        carsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        ArrayAdapter<String> carsAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.component,  R.id.tv_promo_txt, carsList);
+                        carsAdapter.setDropDownViewResource(R.layout.component);
                         mProductSpinner.setAdapter(carsAdapter);
                         break;
                     case 2:
                         String[] electronics = getResources().getStringArray(R.array.categories_electronics);
                         List<String> electronicsList = Arrays.asList(electronics);
-                        ArrayAdapter<String> electronicsAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, electronicsList);
-                        electronicsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        ArrayAdapter<String> electronicsAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.component,  R.id.tv_promo_txt, electronicsList);
+                        electronicsAdapter.setDropDownViewResource(R.layout.component);
                         mProductSpinner.setAdapter(electronicsAdapter);
                         break;
                     case 3:
                         String[] furniture = getResources().getStringArray(R.array.categories_furniture);
                         List<String> furnitureList = Arrays.asList(furniture);
-                        ArrayAdapter<String> furnitureAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, furnitureList);
-                        furnitureAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        ArrayAdapter<String> furnitureAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.component,  R.id.tv_promo_txt, furnitureList);
+                        furnitureAdapter.setDropDownViewResource(R.layout.component);
                         mProductSpinner.setAdapter(furnitureAdapter);
                         break;
                     case 4:
                         String[] kitchen = getResources().getStringArray(R.array.categories_kitchen);
                         List<String> kitchenList = Arrays.asList(kitchen);
-                        ArrayAdapter<String> kitchenAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, kitchenList);
-                        kitchenAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        ArrayAdapter<String> kitchenAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.component,  R.id.tv_promo_txt, kitchenList);
+                        kitchenAdapter.setDropDownViewResource(R.layout.component);
                         mProductSpinner.setAdapter(kitchenAdapter);
                         break;
                     case 5:
                         String[] entertainment = getResources().getStringArray(R.array.categories_entertainment);
                         List<String> entertainmentList = Arrays.asList(entertainment);
-                        ArrayAdapter<String> entertainmentAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, entertainmentList);
-                        entertainmentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        ArrayAdapter<String> entertainmentAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.component,  R.id.tv_promo_txt, entertainmentList);
+                        entertainmentAdapter.setDropDownViewResource(R.layout.component);
                         mProductSpinner.setAdapter(entertainmentAdapter);
                         break;
                 }
